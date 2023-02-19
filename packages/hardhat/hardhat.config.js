@@ -25,7 +25,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "goerli";
 
 const mainnetGwei = 115;
 
@@ -57,8 +57,8 @@ module.exports = {
       // (you can put in a mnemonic here to set the deployer locally)
     },
     rinkeby: {
-      url: "https://rinkeby.infura.io/v3/ec6a8acd1d354717acec099ad46a0bab", // <---- YOUR INFURA ID! (or it won't work)
-      //    url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXX/eth/rinkeby", // <---- YOUR MORALIS ID! (not limited to infura)
+      //url: "https://rinkeby.infura.io/v3/ec6a8acd1d354717acec099ad46a0bab", // <---- YOUR INFURA ID! (or it won't work)
+      url: "https://speedy-nodes-nyc.moralis.io/<rinkeby-key>/eth/rinkeby", // <---- YOUR MORALIS ID! (not limited to infura)
       accounts: {
         mnemonic: mnemonic(),
       },
@@ -86,8 +86,8 @@ module.exports = {
       },
     },
     goerli: {
-      url: "https://goerli.infura.io/v3/ec6a8acd1d354717acec099ad46a0bab", // <---- YOUR INFURA ID! (or it won't work)
-      //      url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXXXX/eth/goerli", // <---- YOUR MORALIS ID! (not limited to infura)
+      url: "https://goerli.infura.io/v3/<goerli-key>", // <---- YOUR INFURA ID! (or it won't work)
+      //url: "https://speedy-nodes-nyc.moralis.io/KhPRnadQdzL22xsrosJCm15MCLuAc1Y3ejpvoZIu5PdB2WhOWKJXPmowJgRqCIKN/eth/goerli", // <---- YOUR MORALIS ID! (not limited to infura)
       accounts: {
         mnemonic: mnemonic(),
       },
